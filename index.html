@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<script
+			src="https://kit.fontawesome.com/8173c0abca.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<div id="header" class="video-header">
+			<video  autoplay muted loop id="video-bg">
+				<source id="videoSource" src="images/network_-_12716 (1080p).mp4" type="video/mp4">
+			</video>
+			<div class="container ">
+				<nav>
+					<img src="" class="logo" />
+					<ul id="sidemenu"	>
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li>
+							<label class="theme-switch" for="theme-toggle">
+								<input type="checkbox" id="theme-toggle" />
+								<span class="slider round"></span>
+							</label>
+						</li>
+						<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+					</ul>
+					<i id= "menu" class="fa-solid fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<div class="header-text">
+					
+					<p class ="section slide-left">Software Engineer</p>
+					<h1>Hi, I<span>'</span>m <span>Tharindu</span> Liyanage</h1>
+				
+				</div>
+			</div>
+		</div>
+		<div id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1 section slide-left">
+						<img src="images/abt2.png" />
+					</div>
+					<div class="about-col-2 section slide-right">
+						<h1 class="subtitle">About me</h1>
+						<br />
+						<p>
+							I am a passionate and innovative software engineer with a penchant
+							for thinking outside the box. My journey in the world of
+							technology has been nothing short of exciting, and I take immense
+							pride in my ability to find creative solutions to complex
+							problems. With a keen eye for detail and a love for cutting-edge
+							technologies, I constantly strive to push the boundaries of what's
+							possible. Through my projects and experiences, I aim to leave a
+							positive impact on the digital landscape. Join me as I embark on
+							this thrilling adventure of software engineering, where curiosity
+							and imagination know no bounds. Let's bring ideas to life and
+							shape the future together!
+						</p>
+						<br />
+
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">
+								Skills
+							</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>UI/UX</span><br />Design Wep/App interfaces</li>
+								<li><span>Web Development</span><br />Web App Development</li>
+								<li>
+									<span>App Development</span><br />Building Android/iOS apps
+								</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li>
+									<span>2023</span><br />BEng. (Hons) in Software Engineering
+									<br />
+									at Informatics Institute of Technology(IIT) Affiliated with
+									University of Westminster(UK)
+								</li>
+								<li>
+									<span>2019</span><br />Diploma in IT
+									<br />
+									at ESOFT Metro Campus
+								</li>
+								<li>
+									<span>2016</span><br />Sri Lanka Computer CompetencyLicense
+									<br />
+									National Apprentice and IndustrialTraining Authority ( NAITA )
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ----services---- -->
+		<div id="services" class="section slide-left">
+			<div class="container">
+				<h1 class="subtitle">Interested in</h1>
+				<div class="services-list">
+					<div>
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Design</h2>
+						<br />
+						<p>
+							crafting captivating online experiences that seamlessly blend
+							aesthetics with functionality. With a keen understanding of user
+							behavior and the latest design trends, I create visually stunning
+							websites that not only leave a lasting impression but also drive
+							results for businesses. From responsive layouts to intuitive
+							navigation, I strive to bring my clients' visions to life,
+							ensuring their online presence stands out in a competitive digital
+							landscape.
+						</p>
+						<a href="#contact">Learn more</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-crop-simple"></i>
+						<h2>UI/UX Design</h2>
+						<br />
+						<p>
+							specialize in crafting seamless and user-centric digital
+							experiences. By combining empathy with a deep understanding of
+							user behavior, I create intuitive interfaces that engage and
+							delight audiences. My mission is to bridge the gap between
+							technology and human needs, ensuring that every interaction is
+							meaningful, efficient, and memorable.
+						</p>
+						<a href="#contact">Learn more</a>
+					</div>
+					<div>
+						<i class="fa-brands fa-app-store"></i>
+						<h2>App Development</h2>
+						<br />
+						<p>
+							dedicated to turning innovative ideas into user-friendly mobile
+							applications. With a keen eye on the latest trends and
+							technologies, I create seamless and feature-rich apps that cater
+							to diverse needs. From concept to deployment, I take pride in
+							delivering high-quality, scalable, and engaging mobile solutions
+							that empower businesses and individuals to thrive in the digital
+							world.
+						</p>
+						<a href="#contact">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- portfolio -->
+		<div id="portfolio" class="section slide-right">
+			<div class="container">
+				<h1 class="subtitle">My Work</h1>
+				<div class="work-list scrollable-list">
+					<div class="work">
+						<img src="images/work1.jpg" alt="" />
+						<div class="layer">
+							<h3>Real-Time-Cricket-shot-correction</h3>
+							<p></p>
+							<a href="https://youtu.be/svx-pjofSWc?t=433"
+								><i class="fa-brands fa-youtube"></i
+							></a>
+							<a
+								href="https://github.com/TharinduLiyanage/Real-Time-Cricket-shot-correction"
+								><i class="fa-solid fa-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/logo1(1).png" alt="" />
+						<div class="layer">
+							<h3>E-Land Mart</h3>
+							<p>Land value prediction app</p>
+							<a href="https://github.com/Chanuka-Gishen/ELandMart.git"
+								><i class="fa-solid fa-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/work3.jpeg" alt="" />
+						<div class="layer">
+							<h3>Mobile_Car-Game</h3>
+							<p>Android mobile game for identify the car make</p>
+							<a href="https://github.com/TharinduLiyanage/Mobile_Car-Game"
+								><i class="fa-solid fa-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<a href="https://github.com/TharinduLiyanage" class="btn btnsm"
+					>See more</a
+				>
+			</div>
+		</div>
+		<!-- contact -->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p>
+							
+							<a href="mailto:tharindudamith36@gmail.com"
+								><i class="fa-solid fa-paper-plane fa-bounce "></i>tharindudamith36@gmail.com</a>
+						</p>
+						<p>
+							<a href="tel:+94772827770"><i class="fa-solid fa-square-phone fa-bounce"></i>+94 772 827 770</a>
+						</p>
+						<div class="social-icons">
+							<a
+								href="https://www.linkedin.com/in/tharindu-liyanage-1244b41a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWzPxermyT3%2BbRugcMKgaMg%3D%3D"
+								><i class="fa-brands fa-linkedin"></i
+							></a>
+							<a
+								href="https://www.instagram.com/tharindu._.liyanage/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+								><i class="fa-brands fa-instagram"></i
+							></a>
+						</div>
+						<a
+							href="images/CV_Tharindu_Damith.pdf.pdf"
+							download
+							class="btn btn2"
+							>Download CV</a
+						>
+					</div>
+					<div class="contact-right">
+						<form name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Your Name" required />
+							<input
+								type="email"
+								name="Email"
+								placeholder="Your email"
+								required
+							/>
+							<textarea
+								name="Message"
+								rows="6"
+								placeholder="Your Message"
+							></textarea>
+							<button type="submit" class="btn btn2">Submit</button>
+						</form>
+						<span id="msg"></span>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>
+					Copyright © Thari. Made with <i class="fa-solid fa-heart"></i> by
+					T-tech
+				</p>
+			</div>
+		</div>
+		<div class="back-to-top">
+			<a href="#header"><i class="fas fa-arrow-up"></i></a>
+		</div>
+
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove("active-link");
+				}
+				for (tabcontent of tabcontents) {
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+		</script>
+		<script>
+			window.addEventListener("scroll", () => {
+				const button = document.querySelector(".back-to-top");
+				if (window.scrollY > 200) {
+					button.classList.add("active");
+				} else {
+					button.classList.remove("active");
+				}
+			});
+		</script>
+
+		<script>
+			const themeButton = document.getElementById("theme-toggle");
+			const slider = document.querySelector(".slider");
+			const sunIcon = document.createElement("i");
+			sunIcon.className = "fas fa-sun";
+			const moonIcon = document.createElement("i");
+			moonIcon.className = "fas fa-moon";
+			slider.appendChild(sunIcon);
+			const videoSource = document.getElementById('videoSource');
+			const video = document.getElementById('video-bg');
+		
+
+			themeButton.addEventListener("click", () => {
+				document.body.classList.toggle("light-mode"); // Toggle a CSS class for light mode
+				
+				if (document.body.classList.contains("light-mode")) {
+					slider.innerHTML = "";
+					slider.appendChild(moonIcon);
+					videoSource.src = 'images/pattern_-_87789 (720p).mp4';
+					video.load();
+				} else {
+					slider.innerHTML = "";
+					slider.appendChild(sunIcon);
+					videoSource.src = 'images/network_-_12716 (1080p).mp4';
+					video.load();
+				}
+			});
+		</script>
+
+		<script>
+			const scriptURL =
+				"https://script.google.com/macros/s/AKfycbw4xOXaAWS4mFLNO91UjW1UPxPBDTDYslkjVBTrukh1RxdEJLtoqyMHQ78-ZC1xtn1i/exec";
+			const form = document.forms["submit-to-google-sheet"];
+			const msg = document.getElementById("msg");
+
+			form.addEventListener("submit", (e) => {
+				e.preventDefault();
+				fetch(scriptURL, { method: "POST", body: new FormData(form) })
+					.then((response) => {
+						msg.innerHTML = "Message Sent Successfully";
+						setTimeout(function () {
+							msg.innerHTML = "";
+						}, 2000);
+						form.reset();
+					})
+					.catch((error) => console.error("Error!", error.message));
+			});
+		</script>
+		<script>
+			// Add this JavaScript code to your HTML file or an external script.js file
+
+			// Function to handle the intersection of sections
+			function handleIntersection(entries, observer) {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						// Add the "section-animate" class to start the slide-in animation
+						entry.target.classList.add("section-animate");
+					}
+				});
+			}
+
+			// Create an observer for sections
+			const sectionObserver = new IntersectionObserver(handleIntersection, {
+				root: null, // Use the viewport as the root
+				rootMargin: "0px", // No margin around the viewport
+				threshold: 0.2, // Trigger the animation when 20% of the section is visible
+			});
+
+			// Select all sections with the "section" class and observe them
+			const sections = document.querySelectorAll(".section");
+			sections.forEach((section) => {
+				sectionObserver.observe(section);
+			});
+		</script>
+
+		<script>
+			var sidemnu = document.getElementById("sidemenu");
+			var men = document.getElementById("menu");
+
+			function openmenu(){
+				sidemnu.style.right="0";
+				men.style.display="none"
+
+				
+			}
+			function closemenu(){
+				sidemnu.style.right="-200px";
+				men.style.display="block"
+			}
+		</script>
+	</body>
+</html>
